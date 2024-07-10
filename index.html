@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English or Spanish</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Menu</div>
+        <form action="" class="form" id="form">
+          <input required="" class="input" type="text" name="email" id="email" placeholder="Valeur">
+          <input required="" class="input" type="text" name="password" id="password" placeholder="Valeur">
+          <input class="login-button" type="submit" value="Validez">
+        </form>
+          <span class="agreement"><a href="#">English or Spanish by Yaito</a></span>
+      </div>
+      <script>
+        // Sélectionner le formulaire
+        const form = document.getElementById('form');
+      
+        // Ajouter un gestionnaire d'événements pour l'événement 'submit'
+        form.addEventListener('submit', function(event) {
+          // Empêcher la soumission par défaut du formulaire
+          event.preventDefault();
+      
+          // Récupérer les valeurs des champs de saisie
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+      
+          // Afficher un message d'alerte avec les valeurs
+          alert("English or Spanish? \n Whoever moves first is gay");
+      
+          // Vous pouvez ajouter d'autres actions ici si nécessaire
+        });
+      </script>
+      
+</body>
+</html>
